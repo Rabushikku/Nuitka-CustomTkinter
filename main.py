@@ -82,6 +82,7 @@ def compile():
             stderr=subprocess.STDOUT,
             text=True
         )
+        
         for line in process.stdout:
             output_box.configure(state='normal')
             output_box.insert('end', line)
